@@ -49,7 +49,6 @@ EEG_SeizurePrediction/
 
 ├── 📁 T_SNE/ # Dimensionality reduction outputs
 
-│
 ├── 🐍 EEG_preprocessing.py # STFT pipeline (raw EEG → spectrograms)
 
 ├── 🐍 EEG_annotation.py # Dataset labeling utilities
@@ -61,9 +60,11 @@ EEG_SeizurePrediction/
 ├── 🐍 EEG_TSNE.py # Seizure fingerprinting + validation
 
 ├── 🐍 EEG_GradCAM++.py # Interpretability quantification
-│
+
 ├── 📄 Leave-One-out per fold validation metrics.docx
+
 ├── 📄 LICENSE
+
 └── 📄 README.md
 
 ---
