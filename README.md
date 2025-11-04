@@ -57,8 +57,6 @@ EEG_SeizurePrediction/
 ├── 📄 LICENSE
 └── 📄 README.md
 
-text
-
 ---
 
 ## 🚀 Quick Start
@@ -69,7 +67,6 @@ git clone https://github.com/rkv2005/EEG_SeizurePrediction.git
 cd EEG_SeizurePrediction
 pip install -r requirements.txt
 
-text
 
 **Requirements:**
 torch>=1.10.0
@@ -79,7 +76,6 @@ scikit-learn>=1.0.0
 matplotlib>=3.4.0
 pandas>=1.3.0
 
-text
 
 ### Dataset Download
 
@@ -87,7 +83,6 @@ text
 
 wget -r -N -c -np https://physionet.org/files/chbmit/1.0.0/
 
-text
 
 **Cohort:** 10 patients | 80 seizure events | 22-channel EEG | 256 Hz
 
@@ -101,7 +96,6 @@ Convert raw EEG to time-frequency spectrograms:
 
 python EEG_preprocessing.py --data_path /path/to/chb-mit --output_dir ./spectrograms
 
-text
 
 **Output:** 112×112 spectrograms per channel | STFT window: 128 samples | 50% overlap
 
@@ -113,7 +107,6 @@ Train with Leave-One-Seizure-Out cross-validation:
 
 python EEG_model_training.py --patient chb01 --epochs 100 --batch_size 32
 
-text
 
 **Features:**
 - Temporal file pairing (adjacent interictal segments)
@@ -129,7 +122,6 @@ Generate 512-dimensional representations:
 
 python EEG_master_model.py --patient chb01 --load_checkpoint ./models/chb01_best.pth
 
-text
 
 Outputs BiLSTM hidden states for clustering.
 
@@ -141,7 +133,6 @@ Cluster seizures by electrophysiological patterns:
 
 python EEG_TSNE.py --patient chb01 --n_clusters 3 --perplexity 5
 
-text
 
 **Validation Metrics:**
 - ✅ Silhouette Score (cluster separation)
@@ -157,7 +148,6 @@ Visualize time-frequency biomarkers:
 
 python EEG_GradCAM++.py --patient chb01 --seizure_id s1 --layer conv_block4
 
-text
 
 **Quantification Metrics:**
 - Gini Coefficient (energy concentration)
@@ -185,7 +175,6 @@ GradCAM++ Validation → Filters diffuse, low-SNR activations
 
 Ablation Retraining → Removes unlearnable outliers (18/80)
 
-text
 
 ### Decision Criterion
 
@@ -228,7 +217,6 @@ year={2025},
 note={Under Review}
 }
 
-text
 
 ---
 
@@ -241,9 +229,6 @@ This project is licensed under the MIT License - see [LICENSE](LICENSE) for deta
 ## 🤝 Acknowledgments
 
 - **Dataset:** CHB-MIT Database (PhysioNet)
-- **References:** 
-  - Das et al. (2023) - Latent variable framework
-  - Pei et al. (2025) - Pattern stability concept
 
 ---
 
