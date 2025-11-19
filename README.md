@@ -254,7 +254,7 @@ School of Electronics Engineering, VIT Chennai
 
 <div align="center">
 
-**⚡ Status:** Code accompanies IEEE Access submission (Under Review, November 2025)
+**⚡ Status:** Code accompanies IEEE Access submission (Accepted, November 2025)
 
 Made for reproducible seizure prediction research
 
