@@ -8,7 +8,7 @@
 
 **Official implementation of "Investigating Intra-Patient Seizure Heterogeneity via EEG Fingerprinting and Explainable AI"**
 
-*Submitted to IEEE Access (November 2025)*
+*Published in IEEE Access (November 19 2025)*
 
 </div>
 
