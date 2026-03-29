@@ -224,7 +224,7 @@ title={Investigating Intra-Patient Seizure Heterogeneity via EEG Fingerprinting 
 author={Venkatesh, Raghav Kishore and Pratyush, S and Shridevi, S},
 journal={IEEE Access},
 year={2025},
-note={Under Review}
+note={Published}
 }
 
 
